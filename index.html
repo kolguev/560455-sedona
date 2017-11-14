@@ -6,150 +6,157 @@
   <link rel="stylesheet" href="#"> <!-- для резиновой страницы не два разных стиля?-->
 </head>
 <body>
-  <div class="page_wrapper"> <!-- это div предполагаю использовать для создания тени -->
-    <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="index.html#info">Информация</a>
+  <div class="page-wrapper"> <!-- это div предполагаю использовать для создания тени -->
+    <header class="main-header">
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li class="main-nav-link">
+            <a href="index.html#info" tabindex="0">Информация</a>
           </li>
-          <li>
-            <a href="#">Фото и видео</a>
+          <li class="main-nav-link">
+            <a href="#" tabindex="0">Фото и видео</a>
           </li>
-          <li>
-            <a href="#">Карта штата</a>
+          <li class="main-nav-link">
+            <a href="#" tabindex="0">Карта штата</a>
           </li>
-          <li>
-            <a href="hotels.html">Гостиницы</a>
+          <li class="main-nav-link">
+            <a href="hotels.html" tabindex="0">Гостиницы</a>
           </li>
         </ul>
       </nav>
-        <div class="logo main-nav-logo">
-          <a> <!-- logo div сделал, так как предположил что удобнее для применения стилей будет
-        надо ли во что-то еще ссылки оборачивать?-->
+        <div class="logo main-logo">
+          <a class="main-logo-link" href="#" tabindex="0">
           <img src="img/logo.png" alt="Logo" title="Логотип города Седона" width="138" height="70">
           </a>
         </div>
     </header>
-    <main>
-     <div> <!-- header picture Картинка обычно в шапке, не вижу смысла в основную часть переносить -->
-           <!-- а, так как на странице отелей картинки нет, тогда дейсвительно можно вынести в основную часть -->
-      <img <img class="main-header-slogan" src="img/promo-text.png" alt="Sedona Mountains" title="Горы Седоны" width="458" height="352">
+    <main class="main-page">
+     <div class="main-slogan">
+      <img class="slogan" src="img/promo-text.png" alt="Welcome to Sedona" title="Slogan" width="458" height="401">
+      <img class="main-picn" src="img/promo-bg.jpg" alt="Sedona Mountains" title="Горы Седоны" width="800" height="352">
      </div>
-
-        <header>
-          <h1>Cедона — небольшой городок в Aризоне, заслуживающий большего!</h1>
+        <header class="second-header">
+          <h1 class="visually-hidden">Седона</h1>
+          <b>Cедона — небольшой городок в Aризоне, заслуживающий большего!</b>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </header>
 		<!-- 1 section -->
-        <section>
+        <section class="real-city">
           <div>
-            <h2>Настоящий городок</h2>
-            <div>— №1 —</div>
-            <div>Седона — не аттракцион для туристов, там течет своя жизнь</div>
+            <h2 class="visually-hidden">Город - Седона</h2>
+            <b>Настоящий городок</b>
+            <span>— №1 —</span>
+            <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <div class="reason-img">
+          <div class="real-city-img">
             <img src="img/reasons-img-1.jpg" alt="Sedona city" title="Город Седона" width="800" height="401">
           </div>
         </section>
         <!-- 2 section -->
-        <section>
-          <div>
-            <h2>Жилье</h2>
-            <div>Рекомендуем пожить в настоящем мотеле, все как в кино!</div>
+        <section class="description"> <!-- поменять название класса-->
+            <h2 class="visually-hidden">Что интересного в Седоне</h2>
+          <div class="hotels">
+            <b>Жилье</b>
+            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
-          <div>
-            <h2>Еда</h2>
+          <div class="food">
+            <b>Еда</b>
             <div>Всегда заказывайте фирменный бургер,вы не разочаруетесь!</div>
           </div>
-          <div>
-            <h2>Сувениры</h2>
-            <div>Не только китайского, но и местного производства!</div>
+          <div class="souvenirs">
+            <b>Сувениры</b>
+            <p>Не только китайского, но и местного производства!</p>
           </div>
-        </section>
+      </section>
         <!-- 3 section -->
-        <section>
-          <div class="reason-img">
+        <section class="attraction">
+            <h2 class="visually-hidden">Достопримечательности Седоны</h2>
+          <div class="attraction-img">
             <img src="img/reasons-img-2.jpg" alt="Devil's bridge" title="Мост Дьявола" width="800" height="400">
           </div>
           <div>
-            <h2>Там есть Мост дьявола</h2>
-            <div>— №2 —</div>
-            <div>Да, по нему можно пройти! Если конечно вы осмелитесь</div>
+            <b>Там есть Мост дьявола</b>
+            <span>— №2 —</span>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
         </section>
         <!-- 4 section -->
-        <section>
+        <section class="facts">
+            <h2 class="visually-hidden">Интересные факты</h2>
           <div>
-            <h2>Небольшая площадь</h2>
-            <div>— №3 —</div>
-            <div>Все достопримечательности находятся очень близко</div>
+            <b>Небольшая площадь</b>
+            <span>— №3 —</span>
+            <p>Все достопримечательности находятся очень близко</p>
           </div>
           <div>
-            <h2>Красивая дорога</h2>
-            <div>— №4 —</div>
-            <div>Ехать в седону из лас-вегаса совсем не скучно!</div>
+            <b>Красивая дорога</b>
+            <span>— №4 —</span>
+            <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
           </div>
           <div>
-            <h2>Мало туристов</h2>
-            <div>— №5 —</div>
-            <div>Большинство едет в Гранд каньон и толпится там</div>
+            <b>Мало туристов</b>
+            <span>— №5 —</span>
+            <p>Большинство едет в Гранд каньон и толпится там</p>
           </div>
         </section>
-
-	  <!-- 5 section -->
-      <section>
-        <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <a href="#">Поиск гостиницы в седоне</a>
-        <form>
-          <div>
-            <label>Дата заезда:</label>
-            <input type="text">
+        <!-- 5 section -->
+        <section class="search-hotels">
+            <h2 class="visually-hidden">Поиск отеля</h2>
+            <b>Заинтересовались?</b>
+            <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
+            <a href="#" tabindex="0">Поиск гостиницы в седоне</a>
+        <form class="search-form" action="#" method="post">
+          <div class="textfield  textfield-date">
+            <label class="textfield-label" for="date-in">Дата заезда:</label>
+            <input class="textfield-input" id="date-in" type="text" name="check-in" value="24 апреля 2017">
+            <span class="textfield-icon  textfield-icon-calendar"></span>
           </div>
-          <div>
-            <label>Дата выезда:</label>
-            <input type="text">
+          <div class="textfield  textfield-date">
+            <label class="textfield-label" for="date-out">Дата выезда:</label>
+            <input class="textfield-input" id="date-out" type="text" name="check-out" value="4 июля 2017">
+            <span class="textfield-icon  textfield-icon-calendar"></span>
           </div>
-          <div>
-            <div>
-              <label>Взрослые:</label>
-              <div>
-                <button type="button">−</button>
-                <input type="text">
-                <button type="button">+</button>
+          <div class="amount">
+            <div class="parents-amount">
+                <label class="amount-label" for="parents">Взрослые:</label>
+              <div class="amount-controls">
+                <button class="amount-btn  amount-btn-decrease" type="button">−</button>
+                <input class="amount-input" id="parents" type="text" type="text" name="adults-amount" value="2">
+                <button class="amount-btn  amount-btn-increase" type="button">+</button>
               </div>
-            </div>
-            <div>
-              <label>Дети:</label>
-              <div>
-                <button type="button">−</button>
-                <input type="text">
-                <button>+</button>
               </div>
-            </div>
+              <div>
+                <label class="amount-label" for="children">Дети:</label>
+                  <div class="amount-controls">
+                    <button class="amount-btn  amount-btn-decrease" type="button">−</button>
+                    <input class="amount-input" id="children" type="text" name="children-amount" value="0">
+                    <button  class="amount-btn  amount-btn-increase"type="button">+</button>
+                  </div>
+              </div>
           </div>
-          <button type="submit">Найти</button>
-        </form>
-      </section>
-      <div></div> <!-- google map -->
+            <button class="btn  btn-light-blue  search-ubmit" type="submit">Найти</button>
+          </form>
+        </section>
+      <div class="map" id="google-map">
+          <img src="img/map.jpg" alt="Map of Sedona" title="Карта Седоны" width="800" height="400">>
+      </div>
     </main>
-    <footer>
-      <a href="http://visitsedona.com/">#visitsedona</a>
-      <ul> <!-- social links -->
+    <footer class="main-footer">
+      <a lass="main-footer-hashtag" href="http://visitsedona.com/" tabindex="0">#visitsedona</a>
+      <ul class="foter-social social"> <!-- social links -->
         <li>
-			<a href="#">Twitter</a>
+			<a class="social-btn  social-btn-tw  btn  btn-light-blue" href="#" tabindex="0">Twitter</a>
 		</li>
 		<li>
-			<a href="#">Facebook</a>
+			<a class="social-btn  social-btn-b  btn  btn-light-blue" href="#" tabindex="0">Facebook</a>
 		</li>
 		<li>
-			<a href="#">YouTube</a>
+			<a class="social-btn  social-btn-youtube  btn  btn-light-blue" href="#" tabindex="0">YouTube</a>
 		</li>
       </ul>
       <div> <!-- copyright -->
         Website by
-        <a href="https://htmlacademy.ru/">htmlacademy.ru</a>
+        <a href="https://htmlacademy.ru/" tabindex="0">htmlacademy.ru</a>
       </div>
     </footer>
   </div>
