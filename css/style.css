@@ -184,6 +184,14 @@ ul {
     color: #000000;
 }
 
+.hotel-name:hover {
+    color: #81b3d4;
+}
+
+.hotel-name:focus {
+    color: #cacaca;
+}
+
 .filter {
     background-color: #aaa7a7;
     color: #ffffff;
