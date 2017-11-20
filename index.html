@@ -3,7 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>Курорт: Седона</title>
-  <link rel="stylesheet" href="#"> <!-- для резиновой страницы не два разных стиля?-->
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet"href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div class="page-wrapper"> <!-- это div предполагаю использовать для создания тени -->
@@ -40,7 +42,7 @@
           <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </header>
 		<!-- 1 section -->
-        <section class="real-city">
+        <section class="real-city facts">
           <div>
             <h2 class="visually-hidden">Город - Седона</h2>
             <b>Настоящий городок</b>
@@ -60,7 +62,7 @@
           </div>
           <div class="food">
             <b>Еда</b>
-            <div>Всегда заказывайте фирменный бургер,вы не разочаруетесь!</div>
+            <p>Всегда заказывайте фирменный бургер,вы не разочаруетесь!</p>
           </div>
           <div class="souvenirs">
             <b>Сувениры</b>
@@ -68,7 +70,7 @@
           </div>
       </section>
         <!-- 3 section -->
-        <section class="attraction">
+        <section class="attraction facts">
             <h2 class="visually-hidden">Достопримечательности Седоны</h2>
           <div class="attraction-img">
             <img src="img/reasons-img-2.jpg" alt="Devil's bridge" title="Мост Дьявола" width="800" height="400">
@@ -80,7 +82,7 @@
           </div>
         </section>
         <!-- 4 section -->
-        <section class="facts">
+        <section class="description">
             <h2 class="visually-hidden">Интересные факты</h2>
           <div>
             <b>Небольшая площадь</b>
@@ -133,7 +135,7 @@
                   </div>
               </div>
           </div>
-            <button class="btn search-submit" type="submit">Найти</button>
+            <button class="search-submit btn" type="submit">Найти</button>
           </form>
         </section>
       <div class="map" id="google-map">
@@ -141,7 +143,7 @@
       </div>
     </main>
     <footer class="main-footer">
-      <a lass="main-footer-hashtag" href="http://visitsedona.com/" tabindex="0">#visitsedona</a>
+      <a class="main-footer-hashtag" href="http://visitsedona.com/" tabindex="0">#visitsedona</a>
       <ul class="foter-social social"> <!-- social links -->
         <li>
 			<a class="social-btn btn" href="#" tabindex="0">Twitter</a>
@@ -153,9 +155,9 @@
 			<a class="social-btn btn" href="#" tabindex="0">YouTube</a>
 		</li>
       </ul>
-      <div> <!-- copyright -->
+      <div class="copyright"> <!-- copyright -->
         Website by
-        <a href="https://htmlacademy.ru/" tabindex="0">htmlacademy.ru</a>
+        <a  href="https://htmlacademy.ru/" tabindex="0">htmlacademy.ru</a>
       </div>
     </footer>
   </div>
