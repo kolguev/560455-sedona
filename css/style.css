@@ -185,10 +185,7 @@ ul {
 }
 
 .filter {
-    background-color: #000000;
-    background-image: url("img/filter-bg.jpg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
+    background-color: #aaa7a7;
     color: #ffffff;
 }
 
