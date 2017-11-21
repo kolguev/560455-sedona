@@ -98,13 +98,35 @@ ul {
     color: #928a85;
 }
 
-.search-form {
+.search-form input[type="text"] {
+    font: inherit;
     color: #000000;
+    background-color: #f2f2f2;
+}
+
+.search-form input:hover {
+    background-color: #ebebeb;
+}
+
+.search-form input:focus {
+    background-color: #ffffff;
 }
 
 .textfield-input {
     font-weight: bold;
     text-transform: uppercase;
+}
+
+.amount-btn {
+    color: #a9a9a9;
+}
+
+.amount-btn:hover {
+    color: #000000;
+}
+
+.amount-btn:focus {
+    color: #81b3d2;
 }
 
 .btn {
@@ -166,6 +188,44 @@ ul {
     color: #bdbbbc;
 }
 
+
+/* Next code for Page search hotels */
+
+.filter-title {
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.checkbox-label {
+    line-height: 21px;
+}
+
+.filter-form input[type="text"] {
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+    background-color: transparent;
+
+}
+
+.filter-price-value {
+    line-height: 21px;
+}
+
+.form-submit {
+    font: inherit;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    border: 1px solid white;
+    border-radius: 1px;
+    background-color: transparent;
+}
+
+.form-submit:hover {
+    background-color: #ffffff;
+}
+
 .search-result {
     background-color: #ffffff;
 }
@@ -175,12 +235,35 @@ ul {
     color: #000000;
 }
 
+.sort p {
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+}
+
 .sort a {
-    color: #82b3d3;
+    font-size: 12px;
+    line-height: 18px;
+    color: #cacaca;
+}
+
+a.sort-type:hover {
+    color: #81b3d2;
+}
+
+a.sort-type:focus {
+    color: #000000;
+}
+
+a.arrow:hover {
+    color: #000000;
+}
+
+a.arrow:focus {
+    color: #81b3d2;
 }
 
 .hotel-name {
-    font-size: 21px;
     color: #000000;
 }
 
@@ -192,20 +275,13 @@ ul {
     color: #cacaca;
 }
 
+.hotel-rating {
+    line-height: 21px;
+    color: #cacaca;
+    background-color: #f2f2f2;
+}
+
 .filter {
     background-color: #aaa7a7;
     color: #ffffff;
-}
-
-.form-submit {
-    font: inherit;
-    text-align: center;
-    vertical-align: middle;
-    text-transform: uppercase;
-    border: 1px solid white;
-    border-radius: 1px;
-}
-
-.form-submit:hover {
-    background-color: #ffffff;
 }
