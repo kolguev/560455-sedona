@@ -1,9 +1,10 @@
-body {
+* {
     margin: 0;
     padding: 0;
+}
 
+body {
     font-family: "PT Sans", "Arial", sans-serif;
-    width: 1200px;
     font-size: 14px;
     line-height: 26px;
     font-weight: bold;
@@ -34,14 +35,18 @@ ul {
     color: #000000;
 }
 
-.second-header {
+.main-slogan {
     text-align: center;
-
+    /*height: 725px;*/
 }
 
-.second-header h1 {
+.main-slogan h1 {
     font-size: 21px;
     color: #000000;
+}
+
+.main-slogan p {
+    line-height: 21px;
 }
 
 .facts {
@@ -284,4 +289,92 @@ a.arrow:focus {
 .filter {
     background-color: #aaa7a7;
     color: #ffffff;
+}
+
+/* Разметка для сетки */
+
+.page-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+.main-nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav-link {
+    width: 240px;
+    height: 55px;
+    text-align: center;
+    line-height: 4em;
+}
+
+.logo {
+    position: relative;
+    z-index: 100;
+}
+
+.main-slogan {
+    margin-bottom: 55px;
+}
+
+.slogan-bg {
+    position: relative;
+    margin-bottom: 55px;
+}
+
+.main-pic {
+    height: 510px;
+}
+
+.slogan {
+    position: absolute;
+    top: 75px;
+    left: 31%;
+}
+
+.facts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.facts-text {
+    width: 400px;
+    height: 150px;
+}
+
+.description {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-around;
+}
+
+.desc-value {
+    border: 1px solid red;
+    width: 305px;
+}
+
+.description:nth-of-type(4) {
+    background-color: #f2f2f2;
+}
+
+.search-hotels {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    height: 765px;
+}
+
+.search-form-wrapper {
+    margin-top: 55px;
+    position: relative;
+    z-index: 90;
+}
+
+.map {
+    position: absolute;
+    top: 190px;
 }
