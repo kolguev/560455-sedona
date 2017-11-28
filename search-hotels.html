@@ -10,30 +10,29 @@
 <body>
   <div class="page-wrapper">
       <header class="main-header">
-          <nav class="main-nav">
-            <ul class="main-nav-list">
-              <li class="main-nav-link">
-                <a href="index.html#info" tabindex="0">Информация</a>
-              </li>
-              <li class="main-nav-link">
-                <a href="#" tabindex="0">Фото и видео</a>
-              </li>
-              <li class="main-nav-link">
-                <a href="#" tabindex="0">Карта штата</a>
-              </li>
-              <li class="main-nav-link">
-                <a href="hotels.html" tabindex="0">Гостиницы</a>
-              </li>
-            </ul>
-            <a href="#" tabindex="0">
-                <img class="main-logo" src="img/logo.png" alt="Logo" title="Логотип города Седона" width="138" height="70">
-            </a>
-          </nav>
-
-      </header>
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li class="main-nav-link">
+              <a href="index.html#info" tabindex="0">Информация</a>
+            </li>
+            <li class="main-nav-link">
+              <a href="#" tabindex="0">Фото и видео</a>
+            </li>
+            <li class="main-nav-link">
+              <a href="#" tabindex="0">Карта штата</a>
+            </li>
+            <li class="main-nav-link">
+              <a href="hotels.html" tabindex="0">Гостиницы</a>
+            </li>
+          </ul>
+          <a href="#" tabindex="0">
+              <img class="main-logo" src="img/logo.png" alt="Logo" title="Логотип города Седона" width="138" height="70">
+          </a>
+        </nav>
+    </header>
     <main class="main-page">
       <div class="filter">
-          <img class="search-pic" src="img/filter-bg.jpg" alt="Sedona Mountains" title="Горы Седоны" width="800" height="352">
+          <!--<img class="search-pic" src="img/filter-bg.jpg" alt="Sedona Mountains" title="Горы Седоны" width="1200" height="352">-->
         <form class="filter-form" action="#" method="post">
           <fieldset class="filter-group">
             <legend class="filter-title">Инфраструктура:</legend>
@@ -85,15 +84,15 @@
                 </div>
               </div>
             </div>
-
-          </fieldset>
             <span>
               <button class="form-submit" type="submit">Показать</button>
             </span>
+
+          </fieldset>
+
         </form>
     </div>
       <section class="search-result">
-        <div> <!-- Sort -->
           <div class="sort">
             <b>Найдено:<span>3</span></b>
               <p>Сортировка:</p>
@@ -113,7 +112,7 @@
               </li>
             </ul>
           </div>
-        </div>
+          <!--<div class="find-hotels">-->
         <section class="hotels"> <!-- Result Hotel 1 -->
           <div class="hotel-img"> <!-- Hotel 1 img -->
             <img src="img/amarta.jpg" alt="Hotel Amarta" title="Отель Amarta" width="135" height="90">
@@ -163,24 +162,29 @@
                 <span class="hotel-rating">Рейтинг: 9.2</span>
               </div>
         </section>
+    </div>
       </section>
     </main>
     <footer class="main-footer">
-      <a class="main-footer-hashtag" href="http://visitsedona.com/" tabindex="0">#visitsedona</a>
-      <ul class="foter-social social"> <!-- social links -->
-        <li>
+      <div class="footer-column">
+        <a class="main-footer-hashtag" href="http://visitsedona.com/" tabindex="0">#visitsedona</a>
+      </div>
+      <div class="footer-column">
+        <ul class="foter-social social"> <!-- social links -->
+          <li>
 			<a class="social-btn btn" href="#" tabindex="0">Twitter</a>
-		</li>
-		<li>
+		  </li>
+		  <li>
 			<a class="social-btn btn" href="#" tabindex="0">Facebook</a>
-		</li>
-		<li>
+		  </li>
+		  <li>
 			<a class="social-btn btn" href="#" tabindex="0">YouTube</a>
-		</li>
-      </ul>
-      <div class="copyright"> <!-- copyright -->
+		  </li>
+        </ul>
+      </div>
+      <div class=" footer-column copyright"> <!-- copyright -->
         Website by
-        <a href="https://htmlacademy.ru/" tabindex="0">htmlacademy.ru</a>
+        <a  href="https://htmlacademy.ru/" tabindex="0">htmlacademy.ru</a>
       </div>
     </footer>
   </div>

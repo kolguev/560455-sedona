@@ -414,3 +414,34 @@ a.arrow:focus {
 .social li {
     display: inline-block;
 }
+
+/* Сетка второй страницы */
+
+.filter {
+    background-color: #f2f2f2;
+    background-image: url("../img/filter-bg.jpg");
+    background-position: center -50px;
+    min-height: 220px;
+}
+
+.filter-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sort {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* не центруются */
+
+    min-height: 90px;
+}
+
+.sort li {
+    display: inline-block;
+}
+
+.hotels {
+    display: flex;
+}
