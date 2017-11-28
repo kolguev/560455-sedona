@@ -58,7 +58,6 @@ ul {
 
 .facts b {
     font-size: 21px;
-    color: #ffffff;
 }
 
 .description {
@@ -299,34 +298,44 @@ a.arrow:focus {
     background-color: #ffffff;
 }
 
+.main-nav {
+    position: relative;
+}
+
 .main-nav-list {
     display: flex;
     align-items: center;
+    min-height: 55px;
 }
 
 .main-nav-link {
     width: 240px;
-    height: 55px;
     text-align: center;
-    line-height: 4em;
 }
 
-.logo {
-    position: relative;
+.main-nav-list li:nth-child(2) {
+    margin-right: 240px;
+}
+
+.main-logo {
+    position: absolute;
+    top: 0;
+    left: 531px;
     z-index: 100;
 }
 
 .main-slogan {
     margin-bottom: 55px;
+    text-align: center;
 }
 
 .slogan-bg {
     position: relative;
-    margin-bottom: 55px;
-}
-
-.main-pic {
-    height: 510px;
+    min-height: 510px;
+    margin-bottom: 50px;
+    background-color: #f2f2f2;
+    background-image: url("../img/promo-bg.jpg");
+    background-position: center -50px;
 }
 
 .slogan {
@@ -335,25 +344,32 @@ a.arrow:focus {
     left: 31%;
 }
 
+.slogan-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slogan-text h1 {
+    width: 500px;
+}
+
 .facts {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
 .facts-text {
     width: 400px;
-    height: 150px;
 }
 
 .description {
-    border: 1px solid red;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 55px;
 }
 
 .desc-value {
-    border: 1px solid red;
     width: 305px;
 }
 
@@ -365,16 +381,36 @@ a.arrow:focus {
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
-    height: 765px;
 }
 
 .search-form-wrapper {
-    margin-top: 55px;
     position: relative;
-    z-index: 90;
 }
 
-.map {
+.search-form {
     position: absolute;
-    top: 190px;
+    left: 315px;
+    width: 570px;
+    background-color: #ffffff;
+}
+
+.amount {
+    display: flex;
+    justify-content: center;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 120px;
+}
+
+.footer-column {
+    text-align: center;
+    width: 33%;
+}
+
+.social li {
+    display: inline-block;
 }

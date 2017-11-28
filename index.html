@@ -10,6 +10,7 @@
 <body>
   <div class="page-wrapper"> <!-- это div предполагаю использовать для создания тени -->
     <header class="main-header">
+
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li class="main-nav-link">
@@ -19,85 +20,67 @@
             <a href="#" tabindex="0">Фото и видео</a>
           </li>
           <li class="main-nav-link">
-              <a href="#" tabindex="0">
-                  <img class="logo main-logo" src="img/logo.png" alt="Logo" title="Логотип города Седона" width="138" height="70">
-              </a>
-          </li>
-          <li class="main-nav-link">
             <a href="#" tabindex="0">Карта штата</a>
           </li>
           <li class="main-nav-link">
             <a href="hotels.html" tabindex="0">Гостиницы</a>
           </li>
         </ul>
+        <a href="#" tabindex="0">
+            <img class="main-logo" src="img/logo.png" alt="Logo" title="Логотип города Седона" width="138" height="70">
+        </a>
       </nav>
 
     </header>
     <main class="main-page">
      <div class="main-slogan">
          <div class="slogan-bg">
-
-             <img class="main-pic" src="img/promo-bg.jpg" alt="Sedona Mountains" title="Горы Седоны" width="1200">
              <img class="slogan" src="img/promo-text.png" alt="Welcome to Sedona" title="Slogan" width="458" height="350">
          </div>
          <div class="slogan-text">
-             <h1>Cедона — небольшой городок в Aризоне, <br> заслуживающий большего!</h1>
+             <h1>Cедона — небольшой городок в Aризоне, заслуживающий большего!</h1>
              <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
          </div>
      </div>
-
-		<!-- 1 section -->
-        <section class="real-city facts">
+<!-- 1 section -->
+        <section class="facts">
           <div class="facts-text">
-            <!-- <h2 class="visually-hidden">Город - Седона</h2> -->
-            <b>Настоящий <br> городок</b>
-                <br>
-                <br>
+            <b>Настоящий городок</b>
             <p>
                 — №1 —
-                <br><br>
-                Седона — не аттракцион для туристов, <br> там течет своя жизнь
+                Седона — не аттракцион для туристов, там течет своя жизнь
             </p>
           </div>
-          <div class="real-city-img">
+          <div class="facts-img">
             <img src="img/reasons-img-1.jpg" alt="Sedona city" title="Город Седона" width="800" height="260">
           </div>
         </section>
-        <!-- 2 section -->
+<!-- 2 section -->
         <section class="description"> <!-- поменять название класса-->
             <!-- <h2 class="visually-hidden">Что интересного в Седоне</h2> -->
           <div class="hotels desc-value">
             <b>Жилье</b>
-            <br>
-            <br>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
           <div class="food desc-value">
             <b>Еда</b>
-            <br>
-            <br>
             <p>Всегда заказывайте фирменный бургер,вы не разочаруетесь!</p>
           </div>
           <div class="souvenirs desc-value">
             <b>Сувениры</b>
-            <br>
-            <br>
             <p>Не только китайского, но и местного производства!</p>
           </div>
       </section>
         <!-- 3 section -->
-        <section class="attraction facts">
-            <!-- <h2 class="visually-hidden">Достопримечательности Седоны</h2> -->
-          <div class="attraction-img">
+        <section class="facts">
+          <div class="facts-img">
             <img src="img/reasons-img-2.jpg" alt="Devil's bridge" title="Мост Дьявола" width="800" height="260">
           </div>
           <div class="facts-text">
-            <b>Там есть <br> Мост дьявола</b>
-                    <br><br>
+            <b>Там есть Мост дьявола</b>
             <p>
                 — №2 —
-                    <br><br>
-                Да, по нему можно пройти! Если конечно <br>в ы осмелитесь
+                Да, по нему можно пройти! Если конечно вы осмелитесь
             </p>
           </div>
         </section>
@@ -122,7 +105,6 @@
         </section>
         <!-- 5 section -->
         <section class="search-hotels">
-            <!-- <h2 class="visually-hidden">Поиск отеля</h2> -->
 <div class="search-form-wrapper">
           <div class="search-form-title">
             <b>Заинтересовались?</b>
@@ -169,19 +151,23 @@
 
     </main>
     <footer class="main-footer">
-      <a class="main-footer-hashtag" href="http://visitsedona.com/" tabindex="0">#visitsedona</a>
-      <ul class="foter-social social"> <!-- social links -->
-        <li>
+      <div class="footer-column">
+        <a class="main-footer-hashtag" href="http://visitsedona.com/" tabindex="0">#visitsedona</a>
+      </div>
+      <div class="footer-column">
+        <ul class="foter-social social"> <!-- social links -->
+          <li>
 			<a class="social-btn btn" href="#" tabindex="0">Twitter</a>
-		</li>
-		<li>
+		  </li>
+		  <li>
 			<a class="social-btn btn" href="#" tabindex="0">Facebook</a>
-		</li>
-		<li>
+		  </li>
+		  <li>
 			<a class="social-btn btn" href="#" tabindex="0">YouTube</a>
-		</li>
-      </ul>
-      <div class="copyright"> <!-- copyright -->
+		  </li>
+        </ul>
+      </div>
+      <div class=" footer-column copyright"> <!-- copyright -->
         Website by
         <a  href="https://htmlacademy.ru/" tabindex="0">htmlacademy.ru</a>
       </div>
