@@ -125,22 +125,41 @@ input[type="radio"].visually-hidden {
     line-height: 24px;
 }
 
-.search-hotels a {
+.search-btn {
+  width: 570px;
+  height: 90px;
+}
+
+.title-btn {
+    width: 570px;
+    height: 90px;
     font-size: 26px;
     color: #ffffff;
     background-color: #766357;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    border: none;
 }
 
-.search-hotels a:hover {
+.:hover {
     background-color: #604e43;
 }
 
-.search-hotels a:focus {
+.title-btn:focus {
     background-color: #503e33;
     color: #928a85;
 }
 
+.search-form {
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
 .search-form input[type="text"] {
+    box-sizing: border-box;
+    height: 40px;
+    padding-left: 15px;
     font: inherit;
     color: #000000;
     background-color: #f2f2f2;
@@ -154,9 +173,22 @@ input[type="radio"].visually-hidden {
     background-color: #ffffff;
 }
 
+.textfield {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
 .textfield-input {
     font-weight: bold;
     text-transform: uppercase;
+}
+
+.amount {
+    display: flex;
+    align-items: center;
+    margin-bottom: 55px;
 }
 
 .amount-btn {
@@ -169,6 +201,11 @@ input[type="radio"].visually-hidden {
 
 .amount-btn:focus {
     color: #81b3d2;
+}
+
+.search-submit {
+    width: 460px;
+    height: 60px;
 }
 
 .btn {
@@ -431,10 +468,10 @@ a.arrow:focus {
 
 .description-2 {
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
     display: flex;
     justify-content: space-around;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 
 .description-2 span {
@@ -514,6 +551,11 @@ a.arrow:focus {
     position: relative;
 }
 
+.search-form-title p {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
 .search-form {
     position: absolute;
     left: 50%;
@@ -523,14 +565,24 @@ a.arrow:focus {
     z-index: 100;
 }
 
+.form-wrapper {
+    width: 460px;
+    margin: auto;
+}
+
 .amount {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+.amount-input {
+    width: 120px;
 }
 
 .map {
     height: 475px;
     position: relative;
+    padding-bottom: 115px;
 }
 
 .main-footer {
