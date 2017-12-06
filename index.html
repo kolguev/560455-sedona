@@ -45,9 +45,11 @@
 <!-- 1 section -->
         <section class="facts">
           <div class="facts-text">
-            <b>Настоящий городок</b>
-            <p>— №1 —</p>
-            <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
+            <div class="text-wrapper">
+              <b>Настоящий городок</b>
+              <p>— №1 —</p>
+              <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
           </div>
           <div class="facts-img">
             <img src="img/reasons-img-1.jpg" alt="Sedona city" title="Город Седона" width="800" height="260">
@@ -76,9 +78,11 @@
             <img src="img/reasons-img-2.jpg" alt="Devil's bridge" title="Мост Дьявола" width="800" height="260">
           </div>
           <div class="facts-text">
-            <b>Там есть Мост дьявола</b>
-            <p>— №2 —</p>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            <div class="text-wrapper">
+              <b>Там есть Мост дьявола</b>
+              <p>— №2 —</p>
+              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
           </div>
         </section>
         <!-- 4 section -->
@@ -115,27 +119,27 @@
           <div class="textfield textfield-date">
             <label class="textfield-label" for="date-in">Дата заезда:</label>
             <input class="textfield-input" id="date-in" type="text" name="check-in" value="24 апреля 2017">
-            <button class="textfield-icon-calendar" type="button">
+            <button class="icon-calendar-first" type="button">
           </div>
           <div class="textfield textfield-date">
             <label class="textfield-label" for="date-out">Дата выезда:</label>
             <input class="textfield-input" id="date-out" type="text" name="check-out" value="4 июля 2017">
-            <button class="textfield-icon-calendar" type="button">
+            <button class="icon-calendar-second" type="button">
           </div>
           <div class="amount">
 
                 <label class="amount-label" for="parents">Взрослые:</label>
 
-                <button class="amount-btn amount-btn-decrease" type="button">−</button>
+                <button class="amount-btn amount-btn-decrease-parents" type="button"></button>
                 <input class="amount-input" id="parents" type="text" type="text" name="adults-amount" value="2">
-                <button class="amount-btn amount-btn-increase" type="button">+</button>
+                <button class="amount-btn amount-btn-increase-parents" type="button"></button>
 
 
                 <label class="amount-label" for="children">Дети:</label>
 
-                    <button class="amount-btn  amount-btn-decrease" type="button">−</button>
+                    <button class="amount-btn  amount-btn-decrease-children" type="button"></button>
                     <input class="amount-input" id="children" type="text" name="children-amount" value="0">
-                    <button  class="amount-btn  amount-btn-increase"type="button">+</button>
+                    <button  class="amount-btn  amount-btn-increase-children" type="button"></button>
 
           </div>
             <button class="search-submit btn" type="submit">Найти</button>
@@ -154,21 +158,29 @@
         <a class="main-footer-hashtag" href="http://visitsedona.com/" tabindex="0">#visitsedona</a>
       </div>
       <div class="footer-column">
-        <ul class="foter-social social"> <!-- social links -->
+         <ul class="foter-social social"> <!-- social links -->
           <li>
-			<a class="social-btn btn" href="#" tabindex="0">Twitter</a>
-		  </li>
-		  <li>
-			<a class="social-btn btn" href="#" tabindex="0">Facebook</a>
-		  </li>
-		  <li>
-			<a class="social-btn btn" href="#" tabindex="0">YouTube</a>
-		  </li>
-        </ul>
+            <p class="social-btn btn tw">
+			         <a href="#" tabindex="0"></a>
+            </p>
+		      </li>
+		      <li>
+            <p class="social-btn btn fb">
+			         <a href="#" tabindex="0"></a>
+            </p>
+		       </li>
+		       <li>
+             <p class="social-btn btn YouTube">
+			          <a href="#" tabindex="0"></a>
+             </p>
+		       </li>
+         </ul>
       </div>
-      <div class=" footer-column copyright"> <!-- copyright -->
-        Website by
-        <a  href="https://htmlacademy.ru/" tabindex="0">htmlacademy.ru</a>
+      <div class="footer-column copyright"> <!-- copyright -->
+        <b>Website by</b>
+        <span class="copyright-img">
+          <a  href="https://htmlacademy.ru/" tabindex="0"></a>
+        </span>
       </div>
     </footer>
   </div>
