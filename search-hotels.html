@@ -93,9 +93,12 @@
         </div>
       <section class="search-result">
           <div class="sort">
-            <b>Найдено:<span>3</span></b>
-              <p>Сортировка:</p>
-            <ul>
+            <div class="sort-wrapper">
+
+            <b>Найдено: 3</b>
+            <p>Сортировка:</p>
+
+            <ul class="sort-ul">
               <li>
                 <a class="sort-type" href="#" tabindex="0">По цене</a>
               </li>
@@ -105,64 +108,73 @@
               <li>
                 <a class="sort-type" href="#" tabindex="0">По рейтингу</a>
               </li>
-              <li>
+            </ul>
+            <ul class="arrow-ul">
+              <li >
                 <a class="arrow" href="#" tabindex="0">По убыванию</a>
                 <a class="arrow" href="#"tabindex="0">По возрастанию</a>
               </li>
             </ul>
+            </div>
           </div>
           <!--<div class="find-hotels">-->
-        <section class="hotels"> <!-- Result Hotel 1 -->
-          <div class="hotel-img"> <!-- Hotel 1 img -->
+        <section class="hotels">
+          <div class="hotels-wrapper">
+          <div class="hotel-img">
             <img src="img/amarta.jpg" alt="Hotel Amarta" title="Отель Amarta" width="135" height="90">
           </div>
             <div class="hotel-info">
               <a class="hotel-name" href="#" tabindex="0"><b>Amara Resort &amp; Spa</b></a>
               <p class="hotel-price">Гостиница ОТ 4000 Р.</p>
                 <div class="hotel-booking"> <!-- Button -->
-                  <a class="btn" href="#" tabindex="0">Подробнее</a>
-                  <a class="btn hotel-btn" href="#" tabindex="0">Забронировать</a>
+                  <button class="btn hotel-btn" type="button">Подробнее</button>
+                  <button class="btn hotel-btn" type="button">Забронировать</button>
                 </div>
             </div>
             <div class="hotel-rating">
-                <span class="hotel-stars  hotel-stars_4">★★★★</span>
-                <p class="hotel-rating">Рейтинг: 8.5</p>
+                <span class="hotel-stars">★★★★</span>
+                <p>Рейтинг: 8.5</p>
+            </div>
             </div>
         </section>
 
-        <section class="hotels"> <!-- Result Hotel 2 -->
-          <div class="hotel-img"> <!-- Hotel 2 img -->
+        <section class="hotels">
+          <div class="hotels-wrapper">
+          <div class="hotel-img">
             <img src="img/desert.jpg" alt="Hotel Desert Quail Inn" title="Отель Desert Quail Inn" width="135" height="90">
           </div>
               <div class="hotel-info">
                 <a class="hotel-name" href="#" tabindex="0"><b>Desert Quail Inn</b></a>
-                <p class="hotel-price">Мотель ОТ 3000 Р.</p>
+                <p class="hotel-price">Мотель <span>ОТ 3000 Р.</span></p>
                   <div class="hotel-booking">
-                    <a class="btn" href="#" tabindex="0">Подробнее</a>
-                    <a class="btn hotel-btn" href="#" tabindex="0">Забронировать</a>
+                    <button class="btn hotel-btn" type="button">Подробнее</button>
+                    <button class="btn hotel-btn" type="button">Забронировать</button>
                   </div>
               </div>
               <div class="hotel-rating">
-                  <span class="hotel-stars  hotel-stars_4">★★★</span>
-                  <p class="hotel-rating">Рейтинг: 8.9</p>
+                  <span class="hotel-stars">★★★</span>
+                  <p>Рейтинг: 8.9</p>
               </div>
+            </div>
         </section>
-        <section class="hotels"> <!-- Result Hotel 3 -->
-          <div class="hotel-img"> <!-- Hotel 3 img -->
+        <section class="hotels">
+          <div class="hotels-wrapper">
+          <div class="hotel-img">
             <img src="img/villas.jpg" alt="Hotel Villas at Poco Diablo" title="Отель Villas at Poco Diablo" width="135" height="90">
           </div>
-              <div lass="hotel-info">
+              <div class="hotel-info">
                 <a class="hotel-name" href="#" tabindex="0"><b>Villas at Poco Diablo</b></a>
-                <p class="hotel-price">Апартаменты ОТ 2000 Р.</p>
-                  <div class="hotel-booking">
-                    <a class="btn" href="#" tabindex="0">Подробнее</a>
-                    <a class="btn hotel-btn" href="#" tabindex="0">Забронировать</a>
-                  </div>
+                <p class="hotel-price">Апартаменты <span>ОТ 2000 Р.</span></p>
+                <div class="hotel-booking">
+                  <button class="btn hotel-btn" type="button">Подробнее</button>
+                  <button class="btn hotel-btn" type="button">Забронировать</button>
+                </div>
               </div>
               <div class="hotel-rating">
-                  <span class="hotel-stars  hotel-stars_4">★★</span>
-                  <p class="hotel-rating">Рейтинг: 9.2</p>
+                  <span class="hotel-stars">★★</span>
+                  <p>Рейтинг: 9.2</p>
               </div>
+          </div>
         </section>
       </section>
     </main>
