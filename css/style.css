@@ -698,13 +698,20 @@ fieldset {
     margin-right: 100px;
 }
 
+.filter-checkbox {
+    padding-left: 40px;
+}
+
 .filter-group label {
-  position: relative;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+}
 
-  display: block;
-
-  cursor: pointer;
-  user-select: none;
+.checkbox-input:not(checked) {
+  position: absolute;
+  opacity: 0;
 }
 
 .checkbox-input + label::before {
@@ -719,10 +726,6 @@ fieldset {
 
 .checkbox-input:checked + label::before {
     background-image: url("../img/icon-checkbox_checked.png");
-}
-
-.filter-checkbox {
-    padding-left: 50px;
 }
 
 .filter-group-cost {
