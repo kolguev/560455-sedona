@@ -9,8 +9,7 @@ body {
     line-height: 26px;
     font-weight: 700;
     color: #333333;
-    min-height: 768px;
-    max-height: 1200px;
+    height: 1200px;
     text-transform: uppercase;
     background-color: #f2f2f2;
 }
@@ -29,7 +28,7 @@ img {
 }
 
 .visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
+input[type="filter-checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
     position: absolute;
     width: 1px;
@@ -667,35 +666,56 @@ input[type="radio"].visually-hidden {
 
 /* Разметка второй страницы */
 
+fieldset {
+   border: 0 none;
+   padding: 0;
+   margin: 0;
+
+}
+
 .filter-title {
+    margin-bottom: 9px;
     font-size: 16px;
     line-height: 21px;
 }
 
 .checkbox-label {
-    line-height: 21px;
+    font-size: 14px;
+    line-height: 20px;
 }
 
-.filter {
+.filter-checkbox {
+    margin-top: 20px;
+}
+
+.filter-form {
+    display: flex;
+    align-items: center;
     background-color: #aaa7a7;
     color: #ffffff;
     background-color: #f2f2f2;
     background-image: url("../img/filter-bg.jpg");
     background-position: center -50px;
-    min-height: 220px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    padding: 25px 0;
 }
 
-.filter-form {
+.filter-form-wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 60px;
 }
 
-.filter-group:nth-child(3) {
-    width: 330px;
-    margin-left: 420px;
+.filter-group {
+    margin-right: 100px;
+}
+
+.filter-group-cost {
+    color: #ffffff;
+    text-transform: uppercase;
+    width: 300px;
+    margin-left: auto;
+    margin-right: 0;
 }
 
 .filter-form input[type="text"] {
@@ -703,25 +723,112 @@ input[type="radio"].visually-hidden {
     line-height: 21px;
     color: #ffffff;
     background-color: transparent;
-
 }
 
-.filter-price-value {
+.filter-price-values {
+  position: relative;
+    width: auto;
+    height: 36px;
+    margin-bottom: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
     line-height: 21px;
+    font-size: 0;
+}
+
+.filter-price-values::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 2px;
+    height: 22px;
+
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+}
+
+.filter-price-values label {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 38px;
+    vertical-align: top;
+    cursor: pointer;
+    padding-left: 60px;
+}
+
+.filter-price-values .min-price,
+.filter-price-values .max-price {
+    width: auto;
+}
+
+.filter-price-values input {
+    width: 50px;
+    margin: 0;
+    color: inherit;
+    font: inherit;
+    background: none;
+    border: none;
+}
+
+.range-controls {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.range-controls .filter-price-range {
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .range-bar {
+    width: 80%;
+    height: 2px;
+    background: #ffffff;
+}
+
+.range-toggle {
+    position: absolute;
+    top: -9px;
+    width: 4px;
+    height: 4px;
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+}
+
+.range-toggle:hover {
+    background: #1c4f80;
+}
+
+.range-toggle-min {
+    left: 0;
+}
+
+.range-toggle-max {
+    left: 80%;
 }
 
 .form-submit {
-    font: inherit;
-    text-align: center;
-    vertical-align: middle;
+    display: block;
+    margin: 0 auto;
+    padding: 6px 35px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
     text-transform: uppercase;
-    border: 1px solid white;
-    border-radius: 1px;
-    background-color: transparent;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    cursor: pointer;
 }
 
 .form-submit:hover {
-    background-color: #ffffff;
+    color: #000000;
+    background: #ffffff;
 }
 
 .search-result {
@@ -810,7 +917,6 @@ a.arrow:focus {
 }
 
 .hotels b {
-    display: block;
     margin: 0;
     padding: 0;
     font-size: 21px;
@@ -833,28 +939,37 @@ a.arrow:focus {
 }
 
 .hotel-info {
+    margin-top: -6px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    /*flex-direction: column;*/
     justify-content: space-between;
-    width: 300px;
+    width: 275px;
 
 }
 
-.hotel-name {
+.hotel-name a {
     color: #000000;
 }
 
-.hotel-name:hover {
+.hotel-name a:hover {
     color: #81b3d4;
 }
 
-.hotel-name:focus {
+.hotel-name a:focus {
     color: #cacaca;
+}
+
+.hotel-booking {
+    margin-top: auto;
+}
+
+.hotel-booking p {
+    margin-bottom: 12px;
 }
 
 .hotel-btn {
     padding: 0 20px;
-    margin-right: 10px;
 }
 
 .hotel-rating {
@@ -868,9 +983,11 @@ a.arrow:focus {
 }
 
 .hotel-rating p {
+    padding: 0 10px;
     background-color: #f2f2f2;
 }
 
 .hotel-stars {
+    color: #81b3d2;
     font-size: 20px;
 }

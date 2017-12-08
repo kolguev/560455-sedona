@@ -33,64 +33,55 @@
         </nav>
     </header>
     <main class="main-page">
-      <div class="filter">
-        <form class="filter-form" action="#" method="post">
+      <form class="filter-form" action="#" method="post">
+        <div class="filter-form-wrapper">
           <fieldset class="filter-group">
             <legend class="filter-title">Инфраструктура:</legend>
-            <div class="checkbox filter-checkbox">
+            <div class="filter-checkbox">
               <input class="checkbox-input" id="pool" type="checkbox" name="pool" checked>
               <label class="checkbox-label" for="pool">Бассейн</label>
             </div>
-            <div class="checkbox filter-checkbox">
+            <div class="filter-checkbox">
               <input class="checkbox-input" id="parking" type="checkbox" name="parking">
               <label class="checkbox-label" for="parking">Парковка</label>
             </div>
-            <div class="checkbox filter-checkbox">
+            <div class="filter-checkbox">
               <input class="checkbox-input" id="wi-fi" type="checkbox" name="wi-fi">
               <label class="checkbox-label" for="wi-fi">WI-FI</label>
             </div>
           </fieldset>
           <fieldset class="filter-group">
             <legend class="filter-title">Тип жилья:</legend>
-            <div class="checkbox filter-checkbox">
+            <div class="filter-checkbox">
               <input class="checkbox-input" id="hotel" type="checkbox" name="hotel" checked>
               <label class="checkbox-label" for="hotel">Гостиница</label>
             </div>
-            <div class="checkbox filter-checkbox">
+            <div class="filter-checkbox">
               <input class="checkbox-input" id="motel" type="checkbox" name="motel" checked>
               <label class="checkbox-label" for="motel">Мотель</label>
             </div>
-            <div class="checkbox filter-checkbox">
+            <div class="filter-checkbox">
               <input class="checkbox-input" id="apartments" type="checkbox" name="apartments" checked>
               <label class="checkbox-label" for="apartments">Апартаменты</label>
             </div>
           </fieldset>
           <fieldset class="filter-group filter-group-cost">
             <legend class="filter-title">Стоимость в сутки (Р):</legend>
-            <div class="filter-price">
               <div class="filter-price-values">
-                <div class="filter-price-value filter-price-value_min">
-                  <label for="min-price">от</label>
-                  <input id="min-price" type="text" name="min-price" value="0">
-                </div>
-                <div class="filter-price-value filter-price-value_max">
-                  <label for="max-price">до</label>
-                  <input id="max-price" type="text" name="max-price" value="3000">
-                </div>
+                <label for="min-price">от <input id="min-price" type="text" name="min-price" value="0"></label>
+                <label for="max-price">до <input id="max-price" type="text" name="max-price" value="3000"></label>
               </div>
-              <div class="range filter-range">
-                <div class="range-bar">
-                  <span class="range-marker range-marker_min"></span>
-                  <span class="range-marker range-marker_max"></span>
-                </div>
+            <div class="range-controls">
+              <div class="filter-price-range">
+                <div class="range-bar"></div>
               </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
             </div>
-            <span>
               <button class="form-submit" type="submit">Показать</button>
-            </span>
-            </fieldset>
-          </form>
+          </fieldset>
         </div>
+      </form>
       <section class="search-result">
           <div class="sort">
             <div class="sort-wrapper">
@@ -120,22 +111,27 @@
           <!--<div class="find-hotels">-->
         <section class="hotels">
           <div class="hotels-wrapper">
-          <div class="hotel-img">
-            <img src="img/amarta.jpg" alt="Hotel Amarta" title="Отель Amarta" width="135" height="90">
-          </div>
+            <div class="hotel-img">
+              <img src="img/amarta.jpg" alt="Hotel Amarta" title="Отель Amarta" width="135" height="90">
+            </div>
             <div class="hotel-info">
-              <a class="hotel-name" href="#" tabindex="0"><b>Amara Resort &amp; Spa</b></a>
-              <p class="hotel-price">Гостиница ОТ 4000 Р.</p>
-                <div class="hotel-booking"> <!-- Button -->
-                  <button class="btn hotel-btn" type="button">Подробнее</button>
-                  <button class="btn hotel-btn" type="button">Забронировать</button>
-                </div>
+              <div class="hotel-name">
+                <a href="#" tabindex="0"><b>Amara Resort &amp; Spa</b></a>
+              </div>
+              <div class="hotel-booking">
+                <p class="hotel-price">Гостиница</p>
+                <button class="btn hotel-btn" type="button">Подробнее</button>
+              </div>
+              <div class="hotel-booking"> <!-- Button -->
+                <p>ОТ 4000 Р.</p>
+                <button class="btn hotel-btn" type="button">Забронировать</button>
+              </div>
             </div>
             <div class="hotel-rating">
                 <span class="hotel-stars">★★★★</span>
                 <p>Рейтинг: 8.5</p>
             </div>
-            </div>
+          </div>
         </section>
 
         <section class="hotels">
@@ -144,12 +140,17 @@
             <img src="img/desert.jpg" alt="Hotel Desert Quail Inn" title="Отель Desert Quail Inn" width="135" height="90">
           </div>
               <div class="hotel-info">
-                <a class="hotel-name" href="#" tabindex="0"><b>Desert Quail Inn</b></a>
-                <p class="hotel-price">Мотель <span>ОТ 3000 Р.</span></p>
-                  <div class="hotel-booking">
-                    <button class="btn hotel-btn" type="button">Подробнее</button>
-                    <button class="btn hotel-btn" type="button">Забронировать</button>
-                  </div>
+                <div class="hotel-name">
+                  <a href="#" tabindex="0"><b>Desert Quail Inn</b></a>
+                </div>
+                <div class="hotel-booking">
+                  <p class="hotel-price">Мотель</p>
+                  <button class="btn hotel-btn" type="button">Подробнее</button>
+                </div>
+                <div class="hotel-booking">
+                  <p>ОТ 3000 Р.</p>
+                  <button class="btn hotel-btn" type="button">Забронировать</button>
+                </div>
               </div>
               <div class="hotel-rating">
                   <span class="hotel-stars">★★★</span>
@@ -163,10 +164,15 @@
             <img src="img/villas.jpg" alt="Hotel Villas at Poco Diablo" title="Отель Villas at Poco Diablo" width="135" height="90">
           </div>
               <div class="hotel-info">
-                <a class="hotel-name" href="#" tabindex="0"><b>Villas at Poco Diablo</b></a>
-                <p class="hotel-price">Апартаменты <span>ОТ 2000 Р.</span></p>
+                <div class="hotel-name">
+                <a href="#" tabindex="0"><b>Villas at Poco Diablo</b></a>
+                </div>
                 <div class="hotel-booking">
+                  <p class="hotel-price">Апартаменты </p>
                   <button class="btn hotel-btn" type="button">Подробнее</button>
+                </div>
+                <div class="hotel-booking">
+                  <p>ОТ 2000 Р.</p>
                   <button class="btn hotel-btn" type="button">Забронировать</button>
                 </div>
               </div>
