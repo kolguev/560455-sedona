@@ -38,30 +38,30 @@
           <fieldset class="filter-group">
             <legend class="filter-title">Инфраструктура:</legend>
             <div class="filter-checkbox">
-              <input class="checkbox-input" id="pool" type="checkbox" name="pool" checked>
+              <input class="checkbox-input visually-hidden" id="pool" type="checkbox" name="pool" checked>
               <label class="checkbox-label" for="pool">Бассейн</label>
             </div>
             <div class="filter-checkbox">
-              <input class="checkbox-input" id="parking" type="checkbox" name="parking">
+              <input class="checkbox-input visually-hidden" id="parking" type="checkbox" name="parking">
               <label class="checkbox-label" for="parking">Парковка</label>
             </div>
             <div class="filter-checkbox">
-              <input class="checkbox-input" id="wi-fi" type="checkbox" name="wi-fi">
+              <input class="checkbox-input visually-hidden" id="wi-fi" type="checkbox" name="wi-fi">
               <label class="checkbox-label" for="wi-fi">WI-FI</label>
             </div>
           </fieldset>
           <fieldset class="filter-group">
             <legend class="filter-title">Тип жилья:</legend>
             <div class="filter-checkbox">
-              <input class="checkbox-input" id="hotel" type="checkbox" name="hotel" checked>
+              <input class="checkbox-input visually-hidden" id="hotel" type="checkbox" name="hotel" checked>
               <label class="checkbox-label" for="hotel">Гостиница</label>
             </div>
             <div class="filter-checkbox">
-              <input class="checkbox-input" id="motel" type="checkbox" name="motel" checked>
+              <input class="checkbox-input visually-hidden" id="motel" type="checkbox" name="motel" checked>
               <label class="checkbox-label" for="motel">Мотель</label>
             </div>
             <div class="filter-checkbox">
-              <input class="checkbox-input" id="apartments" type="checkbox" name="apartments" checked>
+              <input class="checkbox-input visually-hidden" id="apartments" type="checkbox" name="apartments" checked>
               <label class="checkbox-label" for="apartments">Апартаменты</label>
             </div>
           </fieldset>
@@ -85,30 +85,25 @@
       <section class="search-result">
           <div class="sort">
             <div class="sort-wrapper">
-
-            <b>Найдено: 3</b>
-            <p>Сортировка:</p>
-
-            <ul class="sort-ul">
-              <li>
-                <a class="sort-type" href="#" tabindex="0">По цене</a>
-              </li>
-              <li>
-                <a class="sort-type" href="#" tabindex="0">По типу</a>
-              </li>
-              <li>
-                <a class="sort-type" href="#" tabindex="0">По рейтингу</a>
-              </li>
-            </ul>
-            <ul class="arrow-ul">
-              <li >
-                <a class="arrow" href="#" tabindex="0">По убыванию</a>
-                <a class="arrow" href="#"tabindex="0">По возрастанию</a>
-              </li>
-            </ul>
+                <b>Найдено: 3</b>
+                <p>Сортировка:</p>
+                <ul class="sort-ul">
+                    <li>
+                        <a class="sort-type" href="#" tabindex="0">По цене</a>
+                    </li>
+                    <li>
+                        <a class="sort-type" href="#" tabindex="0">По типу</a>
+                    </li>
+                    <li>
+                        <a class="sort-type" href="#" tabindex="0">По рейтингу</a>
+                    </li>
+                </ul>
+                <div class="arrow-ul">
+                    <button class="arrow-up" type="button"></button>
+                    <button class="arrow-down" type="button"></button>
+                </div>
             </div>
           </div>
-          <!--<div class="find-hotels">-->
         <section class="hotels">
           <div class="hotels-wrapper">
             <div class="hotel-img">
@@ -120,11 +115,11 @@
               </div>
               <div class="hotel-booking">
                 <p class="hotel-price">Гостиница</p>
-                <button class="btn hotel-btn" type="button">Подробнее</button>
+                <button class="btn hotel-btn-1" type="button">Подробнее</button>
               </div>
-              <div class="hotel-booking"> <!-- Button -->
+              <div class="hotel-booking">
                 <p>ОТ 4000 Р.</p>
-                <button class="btn hotel-btn" type="button">Забронировать</button>
+                <button class="btn hotel-btn-2" type="button">Забронировать</button>
               </div>
             </div>
             <div class="hotel-rating">
@@ -145,11 +140,11 @@
                 </div>
                 <div class="hotel-booking">
                   <p class="hotel-price">Мотель</p>
-                  <button class="btn hotel-btn" type="button">Подробнее</button>
+                  <button class="btn hotel-btn-1" type="button">Подробнее</button>
                 </div>
                 <div class="hotel-booking">
                   <p>ОТ 3000 Р.</p>
-                  <button class="btn hotel-btn" type="button">Забронировать</button>
+                  <button class="btn hotel-btn-2" type="button">Забронировать</button>
                 </div>
               </div>
               <div class="hotel-rating">
@@ -169,11 +164,11 @@
                 </div>
                 <div class="hotel-booking">
                   <p class="hotel-price">Апартаменты </p>
-                  <button class="btn hotel-btn" type="button">Подробнее</button>
+                  <button class="btn hotel-btn-1" type="button">Подробнее</button>
                 </div>
                 <div class="hotel-booking">
                   <p>ОТ 2000 Р.</p>
-                  <button class="btn hotel-btn" type="button">Забронировать</button>
+                  <button class="btn hotel-btn-2" type="button">Забронировать</button>
                 </div>
               </div>
               <div class="hotel-rating">
