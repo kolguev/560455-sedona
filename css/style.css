@@ -56,7 +56,7 @@ input[type="radio"].visually-hidden {
     list-style: none;
     width: 100%;
     padding-left: 0;
-    margin: 0;
+    margin: 0 ;
 }
 
 .main-nav-list a {
