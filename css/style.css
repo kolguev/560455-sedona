@@ -39,6 +39,12 @@ textarea {
     font-family: inherit;
 }
 
+input,
+textarea {
+
+    border: 0;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -233,8 +239,7 @@ input[type="radio"].visually-hidden {
 }
 
 .textfield input[type="text"] {
-  padding-left: 13px;
-  box-shadow: inset 0 0 1px rgba(0,0,0,0.5);
+    padding-left: 13px;
 }
 
 .textfield button {
@@ -303,14 +308,15 @@ input[type="radio"].visually-hidden {
     position: absolute;
     top: 12px;
     left: 120px;
+
 }
 
 .amount-btn-decrease-parents::after {
     content: "-";
     position: absolute;
-    left: 8px;
-    top: -3px;
-    transform: scale(2.6, 2.1);
+    left: 9px;
+    top: 0;
+    transform: scale(2.8, 2.1);
 }
 
 .amount-btn-increase-parents {
@@ -323,7 +329,7 @@ input[type="radio"].visually-hidden {
     content: "+";
     position: absolute;
     left: -5px;
-    top: -3px;
+    top: 0;
     transform: scale(1.9, 1.9);
 }
 
@@ -337,8 +343,8 @@ input[type="radio"].visually-hidden {
     content: "-";
     position: absolute;
     left: 5px;
-    top: -3px;
-    transform: scale(1.9, 1.9);
+    top: 0;
+    transform: scale(2.8, 2.1);
 }
 
 .amount-btn-increase-children {
@@ -351,7 +357,7 @@ input[type="radio"].visually-hidden {
     content: "+";
     position: absolute;
     left: -5px;
-    top: -4px;
+    top: 0;
     transform: scale(1.9, 1.9);
 }
 
@@ -482,12 +488,20 @@ input[type="radio"].visually-hidden {
 }
 
 .main-nav-link {
+    box-sizing: border-box;
     font-weight: bold;
-    flex-shrink: 0;
     width: 20%;
 }
 
-.main-nav-list li:nth-child(3),
+.main-nav-list li:nth-child(2){
+    padding-left: 29px;
+}
+
+.main-nav-list li:nth-child(3){
+    padding-right: 29px;
+    text-align: right;
+}
+
 .main-nav-list li:nth-child(4){
     text-align: right;
 }
@@ -825,7 +839,7 @@ input:disabled:checked ~ label::before {
     border: 2px solid #ffffff;
     border-radius: 2px;
     line-height: 21px;
-    font-size: 0;
+    font-size: 14px;
 }
 
 .filter-price-values::after {
@@ -833,10 +847,8 @@ input:disabled:checked ~ label::before {
     position: absolute;
     top: 50%;
     left: 50%;
-
     width: 2px;
     height: 22px;
-
     background: #ffffff;
     transform: translate(-50%, -50%);
 }
@@ -844,19 +856,14 @@ input:disabled:checked ~ label::before {
 .filter-price-values label {
     display: inline-block;
     font-size: 14px;
-    line-height: 38px;
-    vertical-align: top;
+    line-height: 21px;
     cursor: pointer;
-    padding-left: 60px;
-}
-
-.filter-price-values .min-price,
-.filter-price-values .max-price {
-    width: auto;
+    padding-top: 5px;
+    padding-left: 65px;
 }
 
 .filter-price-values input {
-    width: 50px;
+    width: 57px;
     margin: 0;
     color: inherit;
     font: inherit;
@@ -961,42 +968,57 @@ input:disabled:checked ~ label::before {
 }
 
 .arrow-up {
-	top: -10px;
-	left: 10px;
+	top: 1px;
+	left: 20px;
 	border: solid transparent;
 	height: 0;
 	width: 0;
 	position: absolute;
     cursor: pointer;
-	pointer-events: none;
-	border-top-color: #88b7d5;
+
+	border-top-color: #cacaca;
     background-color: #ffffff;
-	border-width: 7px;
+	border-width: 6px;
 	margin-left: -7px;
     transform: rotate(180deg);
 }
 
 .arrow-down {
-	top: -3px;
-	left: 40px;
+	top: 4px;
+	left: 42px;
 	border: solid transparent;
 	height: 2px;
 	width: 2px;
 	position: absolute;
     cursor: pointer;
-	pointer-events: none;
-	border-top-color: #88b7d5;
+	border-top-color: #cacaca;
     background-color: #ffffff;
-	border-width: 7px;
+	border-width: 6px;
 	margin-left: -7px;
 }
 
-a.arrow:hover {
-    color: #000000;
+.arrow-down:hover {
+    border-top-color: #000000;
 }
 
-a.arrow:focus {
-    color: #81b3d2;
+.arrow-up:hover {
+    border-top-color: #000000;
+}
+
+.arrow-down:focus {
+    border-top-color: #81b3d2;
+}
+
+.arrow-up:focus {
+    border-top-color: #81b3d2;
+}
+
+.arrow-down:active {
+    border-top-color: #81b3d2;
+}
+
+.arrow-up:active {
+    border-top-color: #81b3d2;
 }
 
 .sort-wrapper {
@@ -1143,11 +1165,11 @@ a.arrow:focus {
 
 .hotel-rating p {
     padding: 4px 16px;
+    color: #939393;
     background-color: #f2f2f2;
 }
 
 .hotel-stars {
     color: #81b3d2;
-    font-size: 16px;
-    padding-right: 3px;
+    font-size: 19px;
 }
