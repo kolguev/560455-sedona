@@ -438,12 +438,19 @@ input[type="radio"].visually-hidden {
 
 .copyright-img:hover {
     background-image: url("../img/logo_name_hover.svg");
+}
 
+.copyright-img:focus {
+    background-image: url("../img/logo_name_focus.svg");
 }
 
 .social-btn {
     width: 47px;
     height: 47px;
+}
+
+.social-btn a:focus {
+    background-color: #5496bd;
 }
 
 .social-btn.tw {
@@ -709,6 +716,7 @@ input[type="radio"].visually-hidden {
     opacity: 0.9;
     width: 100%;
     height: 120px;
+    margin-top: -3px;
 }
 
 .footer-sec-page {
@@ -726,7 +734,7 @@ input[type="radio"].visually-hidden {
 
 .social li {
     display: inline-block;
-    padding-top: 5px;
+    margin-top: -3px;
 }
 
 /* Разметка второй страницы */
