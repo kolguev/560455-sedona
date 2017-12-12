@@ -5,7 +5,7 @@
   <title>Курорт: Седона</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <div class="page-wrapper">
@@ -130,7 +130,7 @@
                 <button class="amount-btn amount-btn-decrease-parents" type="button"></button>
                 <input class="amount-input" id="parents" type="text" name="adults-amount" value="2">
                 <button class="amount-btn amount-btn-increase-parents" type="button"></button>
-                <label class="amount-label" for="children">Дети:</label>
+                <label class="amount-label amount-label-children" for="children">Дети:</label>
                     <button class="amount-btn  amount-btn-decrease-children" type="button"></button>
                     <input class="amount-input" id="children" type="text" name="children-amount" value="0">
                     <button  class="amount-btn  amount-btn-increase-children" type="button"></button>
@@ -143,7 +143,7 @@
 
         </section>
         <div class="map" id="google-map">
-            <img src="img/map.jpg" alt="Map of Sedona" title="Карта Седоны" width="1200" height="475">
+            <!--<img src="img/map.jpg" alt="Map of Sedona" title="Карта Седоны" width="1200" height="475">-->
         </div>
     </main>
     <footer class="main-footer">
@@ -164,7 +164,7 @@
 		       </li>
 		       <li>
              <button class="social-btn btn YouTube" type="button">
-			     
+
              </button>
 		       </li>
          </ul>
@@ -175,5 +175,7 @@
       </div>
     </footer>
   </div>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDapmjFnR8dGMMqQ6WcJ9xiHbw3Jr191jM&amp;callback=initMap"></script>
+  <script src="js/script.min.js"></script>
 </body>
 </html>

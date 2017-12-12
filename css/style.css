@@ -211,6 +211,10 @@ input[type="radio"].visually-hidden {
     font-weight: bold;
 }
 
+.search-form-closed {
+    display: none;
+}
+
 .search-form input[type="text"] {
     box-sizing: border-box;
     font-weight: bold;
@@ -243,7 +247,7 @@ input[type="radio"].visually-hidden {
 }
 
 .textfield button {
-  border: 0;
+    border: 0;
 }
 
 .icon-calendar-first {
@@ -296,6 +300,7 @@ input[type="radio"].visually-hidden {
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-bottom: 55px;
 }
 
@@ -315,7 +320,7 @@ input[type="radio"].visually-hidden {
     content: "-";
     position: absolute;
     left: 9px;
-    top: 0;
+    top: -3px;
     transform: scale(2.8, 2.1);
 }
 
@@ -329,7 +334,7 @@ input[type="radio"].visually-hidden {
     content: "+";
     position: absolute;
     left: -5px;
-    top: 0;
+    top: -1px;
     transform: scale(1.9, 1.9);
 }
 
@@ -343,7 +348,7 @@ input[type="radio"].visually-hidden {
     content: "-";
     position: absolute;
     left: 5px;
-    top: 0;
+    top: -3px;
     transform: scale(2.8, 2.1);
 }
 
@@ -357,7 +362,7 @@ input[type="radio"].visually-hidden {
     content: "+";
     position: absolute;
     left: -5px;
-    top: 0;
+    top: -1px;
     transform: scale(1.9, 1.9);
 }
 
@@ -687,13 +692,8 @@ input[type="radio"].visually-hidden {
     text-transform: uppercase;
 }
 
-.amount {
-    display: flex;
-    justify-content: space-between;
-}
-
 .amount-input {
-    width: 120px;
+    width: 115px;
     text-align: center;
 }
 
@@ -957,6 +957,7 @@ input:disabled:checked ~ label::before {
 
 .sort li {
     display: inline-block;
+    vertical-align: middle;
 }
 
 .sort b {
@@ -1047,6 +1048,7 @@ input:disabled:checked ~ label::before {
 }
 
 .sort-ul li {
+    margin-top: -2px;
     margin-right: 30px;
 }
 
