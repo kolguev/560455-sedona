@@ -1,4 +1,3 @@
-'use strict'
 
 function initMap() {
   var mapElem = document.getElementById('google-map');
