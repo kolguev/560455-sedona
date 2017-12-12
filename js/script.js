@@ -19,10 +19,10 @@ function initMap() {
   }
 }
 
-var searchBtn = document.querySelector('.title-btn'),
+var titleBtn = document.querySelector('.title-btn'),
 searchForm = document.querySelector('.search-form');
 
-if (searchBtn) {
+if (titleBtn) {
   searchBtn.addEventListener('click', function(event){
     event.preventDefault();
     searchForm.classList.toggle('search-form-closed');
