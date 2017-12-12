@@ -23,8 +23,8 @@ var titleBtn = document.querySelector('.title-btn'),
 searchForm = document.querySelector('.search-form');
 
 if (titleBtn) {
-  searchBtn.addEventListener('click', function(event){
-    event.preventDefault();
+  titleBtn.addEventListener('click', function(evt){
+    evt.preventDefault();
     searchForm.classList.toggle('search-form-closed');
   });
 }
